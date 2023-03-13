@@ -1,0 +1,188 @@
+/*#region general formatting*/
+
+.hacker-explination {
+    width: calc(50vw - 2rem);
+    margin: 1rem;
+    text-align: justify;
+    font-size: 1vw;
+}
+
+#maxtrix-canvas {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    width: 50vw;
+}
+
+.hacking-section {
+    position: absolute;
+    top: 100vh;
+}
+
+span.big-text {
+    font-size: 10rem;
+}
+span.offset-big-text {
+    margin-left: 0.5rem;
+    position: absolute;
+    margin-top: -2rem;
+    font-size: 2rem;
+}
+
+.haxxor-container {
+    width: 100%;
+    height: 30vw;
+}
+
+#slideshow {
+    position: absolute;
+    top: 50vh;
+    width: 100%;
+    transform: translate(0, -50%);
+}
+
+#haxxor {
+    margin-left: auto;
+    margin-right: auto;
+    height: calc(30vw - 2rem - 2px);
+    padding: 1rem;
+    background-color: #0008;
+    border: 1px solid #0f0;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+#haxxor:not(.do-not-object-fit) {
+    object-position: 50% top;
+}
+
+.hacking-leftmost {
+    position: absolute;
+}
+
+.maxtrix-display {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    width: 50vw;
+    height: 100vh;
+}
+
+/*#endregion general formatting*/
+
+/*#region hacker carousel*/
+ 
+/* Styling the area of the slides */
+ 
+#slideshow {
+    overflow: hidden;
+    height: 30vw;
+    width: 100vw;
+    margin: 0 auto;
+}
+ 
+/* Style each of the sides
+with a fixed width and height */
+ 
+.slide {
+    float: left;
+    height: 30vw;
+    width: 50vw;
+    text-align: center;
+}
+ 
+/* Add animation to the slides */
+ 
+.slide-wrapper {
+     
+    /* Calculate the total width on the
+  basis of number of slides */
+    width: calc(50vw * 12);
+     
+    /* Specify the animation with the
+  duration and speed */
+  /* 10/4*[slide count]*/
+    animation: slide 30s ease infinite;
+}
+ 
+/* Define the animation
+for the slideshow */
+ 
+@keyframes slide {
+    0% {
+        margin-left: 0px;
+    }
+    9.09% {
+        margin-left: calc(-50vw * 1);
+    }
+    18.18% {
+        margin-left: calc(-50vw * 2);
+    }
+    27.27% {
+        margin-left: calc(-50vw * 3);
+    }
+    36.36% {
+        margin-left: calc(-50vw * 4);
+    }
+    45.45% {
+        margin-left: calc(-50vw * 5);
+    }
+    54.54% {
+        margin-left: calc(-50vw * 6);
+    }
+    63.63% {
+        margin-left: calc(-50vw * 7);
+    }
+    72.72% {
+        margin-left: calc(-50vw * 8);
+    }
+    81.81% {
+        margin-left: calc(-50vw * 9);
+    }
+    90.90% {
+        margin-left: calc(-50vw * 10);
+    }
+    100% {
+        margin-left: calc(-50vw * 11);
+    }
+}
+
+.hacker-meme-text-top, .hacker-meme-text-bottom {
+    height: calc((100vh - 30vw) / 2);
+    line-height: calc((100vh - 30vw) / 2);
+    text-align: center;
+    font-size: 4vw;
+    color: #0f0;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*#endregion hacker carousel*/
+
+/*#region flash cursor*/
+
+.flash-cursor {
+    animation: flash-cursor 1s step-end infinite;
+}
+
+@keyframes flash-cursor {
+    0% {
+        opacity: 100;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+/*#endregion flash cursor*/
+
+/*
+
+##===============================##
+|| guru meditation; keep it calm ||
+##===============================##
+
+*/

@@ -1,0 +1,108 @@
+/*#region font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #E1DCDC;
+}
+
+/*#endregion font*/
+
+/*#regoin variables*/
+
+:root {
+    --scrollbar-opacity: 0%;
+}
+
+/*#endregion variables*/
+
+/*#region background*/
+
+html, body {
+    min-height: 200vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #313131;
+}
+
+/*#endregion background*/
+
+/*#region fade in on load*/
+
+* {
+    animation: 400ms;
+}
+
+@keyframes entrance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*#endregion fade in on load*/
+
+/*#region general formatting*/
+
+div.jumbo {
+    font-size: 4rem;
+    text-align: center;
+    word-spacing: 1rem;
+    position: absolute;
+    top: 50vh;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    widtH: 100vw;
+}
+
+span.bold {
+    font-weight: bolder;
+}
+
+span.grow-on-scroll {
+    transition: letter-spacing 400ms;
+}
+
+div.title {
+    font-size: larger;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+    border: 0.3rem solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(214, 222, 225, var(--scrollbar-opacity));
+}
+
+/*#endregion general formatting*/
+
+/*#region general formatting*/
+
+
+/*#endregion general formatting*/
+
+
+
+/*
+
+##===============================##
+|| guru meditation; keep it calm ||
+##===============================##
+
+*/
