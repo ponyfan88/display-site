@@ -36,6 +36,13 @@
     width: 100%;
 }
 
+.bottom-all-page {
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    z-index: 999;
+}
+
 #selectable-arrow-bit {
     width: 5vw;
     height: 5vw;

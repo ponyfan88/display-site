@@ -1,0 +1,46 @@
+/*#region general formatting*/
+
+.tuxProgramming {
+    position: absolute;
+    left: 10vw;
+    top: 310vh;
+}
+
+.nice8 {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.movemedownlazyfix {
+    top: 100vh;
+    position: absolute;
+    height: 100vh;
+}
+
+.jumbo > nav {
+    font-size: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.jumbo > nav > a {
+    transition: 400ms;
+}
+
+.jumbo > nav > a:hover {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*#endregion general formatting*/
+
+
+/*
+
+##===============================##
+|| guru meditation; keep it calm ||
+##===============================##
+
+*/

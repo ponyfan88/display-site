@@ -1,5 +1,21 @@
 /*#region general formatting*/
 
+.dolphins {
+    position: absolute;
+    z-index: 0;
+    top: 100vh;
+    left: 70vw;
+    overflow-x: hidden;
+}
+
+.fish {
+    position: absolute;
+    z-index: 0;
+    top: 215vh;
+    left: 5vw;
+    overflow-x: hidden;
+}
+
 .swim-container {
     position: absolute;
     overflow-x: hidden;
@@ -51,10 +67,70 @@
 .sea-title {
     font-size: 6.9vw;
     text-align: center;
+    height: 9vw;
 }
 
 /*#endregion general formatting*/
 
+/*#region lang display*/
+
+.langs {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: calc(100vh - 9vw);
+    gap: 1rem;
+}
+
+.langs > div {
+    height: calc((100vh - 9vw - 5rem) / 3);
+    width: 100%;
+}
+
+.langs > div > .lang-logo-container {
+    height: 100%;
+    width: min-content;
+    background-color: #fffa;
+    border-radius: 50%;
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+.lang-logo {
+    float: left;
+    height: calc(100% - 3rem);
+    padding: 1.5rem;
+    background-color: #fffa;
+    border-radius: 25%;
+}
+
+.lang-name {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2vw;
+}
+
+.lang-fakebg {
+    margin: 1rem;
+    display: inline-block;
+    position: absolute;
+    height: calc((100vh - 9vw - 5rem) / 3 - 2rem);
+    width: calc(100vw - 6rem - ((100vh - 9vw - 5rem) / 3 - 2rem));
+    vertical-align: top;
+    background-color: #fffa;
+    border-radius: 2vh;
+}
+
+.lang-description {
+    margin: 1.5rem;
+    display: inline-block;
+    height: calc(100% - 2rem);
+    width: calc(100vw - 7rem - ((100vh - 9vw - 5rem) / 3 - 2rem));
+    vertical-align: top;
+    color: black;
+    position: absolute;
+}
+
+/*#endregion lang display*/
 
 
 /*
