@@ -26,10 +26,12 @@ let fadeOutRequest
 function fadeOutScrollbar() {
     scrollBarOpacity *= 0.9;
     root.style.setProperty("--scrollbar-opacity", scrollBarOpacity);
-    if (scrollBarOpacity >= 0.01) {
+    if (scrollBarOpacity >= 0.2) {
         fadeOutRequest = window.requestAnimationFrame(fadeOutScrollbar);
     }
     else {
+        scrollBarOpacity = 0.2;
+        root.style.setProperty("--scrollbar-opacity", scrollBarOpacity);
         return;
     }
 }
