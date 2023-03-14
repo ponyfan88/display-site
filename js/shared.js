@@ -42,32 +42,3 @@ function startFadeOutScrollbar() {
         fadeOutRequest = window.requestAnimationFrame(fadeOutScrollbar);
     }, 1000);
 }
-
-setInterval(randomEnvironmentText, 1000);
-
-
-
-const environmentText = document.getElementById("replace-quickly")
-
-let oldSelectedTextIndex = 0;
-let selectedTextIndex = 0;
-
-function randomEnvironmentText() {
-    selectedTextIndex = Math.floor(Math.random() * environmentTexts.length);
-    
-    while (oldSelectedTextIndex == selectedTextIndex) {
-        selectedTextIndex = Math.floor(Math.random() * environmentTexts.length);
-    }
-
-    environmentText.innerText = environmentTexts[selectedTextIndex];
-
-    oldSelectedTextIndex = selectedTextIndex;
-}
-
-environmentTexts = [
-    "epic",
-    "really cool",
-    "awesome",
-    "professional",
-    "REALLY fun",
-]

@@ -1,0 +1,66 @@
+/*#region general formatting*/
+
+.swim-container {
+    position: absolute;
+    overflow-x: hidden;
+    top: 110vh;
+    height: 114.5vh;
+    width: 100vw;
+}
+
+.swimmingly {
+    position: absolute;
+    
+    height: 100%;
+    width: 200vw;
+
+    background-size: 200%;
+    
+    background:
+      radial-gradient(7.25vh at 50% 10.25vh, #1e90ff 99%,#0000 101%) calc(50% - 10vh) 0/20vh 51% repeat-x,
+      radial-gradient(7.25vh at 50% -5.25vh,#0000 99%,#1e90ff 101%) 50% 5vh/20vh calc(51% - 5vh) repeat-x,
+      radial-gradient(7.25vh at 50% calc(100% - 10.25vh),#1e90ff 99%,#0000 101%) calc(50% - 10vh) 100%/20vh 51% repeat-x,
+      radial-gradient(7.25vh at 50% calc(100% + 5.25vh),#0000 99%,#1e90ff 101%) 50% calc(100% - 5vh)/20vh calc(51% - 5vh) repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+
+    animation: move-waves 2s ease-in-out infinite;
+}
+
+.sea {
+    position: absolute;
+    top: 110vh;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 7.25vh;
+    padding-bottom: 7.25vh;
+}
+
+@keyframes move-waves {
+    0% {
+        transform: translateX(-45vh);
+    }
+    50% {
+        transform: translateX(-35vh);
+    }
+    100% {
+        transform: translateX(-45vh);
+    }
+}
+
+.sea-title {
+    font-size: 6.9vw;
+    text-align: center;
+}
+
+/*#endregion general formatting*/
+
+
+
+/*
+
+##===============================##
+|| guru meditation; keep it calm ||
+##===============================##
+
+*/
