@@ -93,29 +93,36 @@ div.title {
         display: block;
         width: 1rem;
     }
-    
+
     ::-webkit-scrollbar-button {
         display: none;
     }
-    
+
     ::-webkit-scrollbar-track {
         background-color: #00000000;
     }
-    
+
     ::-webkit-scrollbar-track-piece {
         background-color: #00000000;
     }
-    
+
     ::-webkit-scrollbar-thumb {
         background-color: rgb(214, 222, 225, var(--scrollbar-opacity));
     }
-    
+
     ::-webkit-scrollbar-thumb:hover {
         background-color: rgb(214, 222, 225, 1);
     }
-    
+
     html {
         overflow: overlay;
+    }
+}
+
+/* since above only works on chrome, this is my firefox solution. firefox users are smart enough to not need a scrollbar anyways.*/
+@-moz-document url-prefix() {
+    * {
+        scrollbar-width: none;
     }
 }
 
