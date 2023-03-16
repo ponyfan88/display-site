@@ -111,7 +111,7 @@ with a fixed width and height */
     /* Specify the animation with the
   duration and speed */
   /* 10/4*[slide count]*/
-    animation: slide 30s ease infinite;
+    animation: slide 30s linear infinite;
 }
  
 /* Define the animation

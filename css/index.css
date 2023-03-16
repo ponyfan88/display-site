@@ -22,16 +22,20 @@
     font-size: 50%;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 4rem;
 }
 
 .jumbo > nav > a {
     transition: 400ms;
+    word-spacing: initial;
+    color:#E1DCDC;
+    text-decoration: none;
 }
 
 .jumbo > nav > a:hover {
     margin-left: 1rem;
     margin-right: 1rem;
+    word-spacing: 1rem;
 }
 
 /*#endregion general formatting*/
